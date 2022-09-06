@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import image from '../assets/planet.png';
 import './style/Navbar.css';
 
@@ -8,9 +8,25 @@ function Navbar() {
       <span className="logotipe"><img src={image} alt="Space" /></span>
       <h1>Space Travelers Hub</h1>
       <div className="links">
-        <Link to="/">Rockets</Link>
-        <Link to="/">Missions</Link>
-        <Link to="/"> | Profile</Link>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+        >
+          Rockets
+        </NavLink>
+        <NavLink
+          to="/Missions"
+          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+        >
+          Missions
+
+        </NavLink>
+        <NavLink
+          to="/MyProfile"
+          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+        >
+          | My Profile
+        </NavLink>
       </div>
     </nav>
   );

@@ -1,18 +1,18 @@
-import {
-  BrowserRouter as Router, Routes,
-  Route,
-} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import React from 'react';
 import Navbar from './components/Navbar';
+import MyProfile from './components/MyProfile';
 
-function App() {
-  return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" />
-      </Routes>
-    </Router>
-  );
+export default class App extends React.PureComponent {
+  render() {
+    return (
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" />
+          <Route path="/MyProfile" element={<MyProfile />} />
+        </Routes>
+      </div>
+    );
+  }
 }
-
-export default App;

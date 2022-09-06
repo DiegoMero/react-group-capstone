@@ -28,6 +28,6 @@
   cursor: pointer;
 }
 
-.links a {
+.inactive {
   text-decoration: none;
 }
