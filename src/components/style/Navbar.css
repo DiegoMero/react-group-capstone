@@ -1,0 +1,33 @@
+.navmenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding-left: 3rem;
+  height: 70px;
+  border-bottom: 1px solid rgb(210, 208, 208);
+}
+
+.navmenu h1 {
+  margin-right: 40%;
+}
+
+.logotipe img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin-left: 2rem;
+  margin-right: 10%;
+  cursor: pointer;
+}
+
+.links a {
+  text-decoration: none;
+}
