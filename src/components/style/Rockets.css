@@ -1,0 +1,18 @@
+.rocketsdiv {
+  display: flex;
+  margin-top: 5%;
+}
+
+.elements {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+}
+
+.image img {
+  width: 12rem;
+}
+
+.reserve {
+  width: 15%;
+}
