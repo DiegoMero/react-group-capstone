@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import MyProfile from './components/MyProfile';
 import Missions from './components/Missions';
+import Rockets from './components/Rockets';
 
 export default class App extends React.PureComponent {
   render() {
@@ -10,7 +11,7 @@ export default class App extends React.PureComponent {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" />
+          <Route path="/" element={<Rockets />} />
           <Route path="/Missions" element={<Missions />} />
           <Route path="/MyProfile" element={<MyProfile />} />
         </Routes>
