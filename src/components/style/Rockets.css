@@ -1,6 +1,7 @@
 .rocketsdiv {
   display: flex;
   margin-top: 5%;
+  padding: 5%;
 }
 
 .elements {
@@ -10,9 +11,14 @@
 }
 
 .image img {
-  width: 12rem;
+  width: 16rem;
+  height: 12rem;
 }
 
 .reserve {
   width: 15%;
+}
+
+.type {
+  margin-top: 0%;
 }
