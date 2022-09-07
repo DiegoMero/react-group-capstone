@@ -1,0 +1,60 @@
+.missions-header {
+  display: flex;
+  width: auto;
+  margin-top: 15px;
+  border: solid 1px gray;
+  margin-left: 3%;
+  margin-right: 9%;
+}
+
+.mission-column {
+  flex-basis: 10%;
+  border-right: solid 1px gray;
+}
+
+.description-column {
+  flex-basis: 65%;
+  border-right: solid 1px gray;
+}
+
+.status-column {
+  flex-basis: 10%;
+  border-right: solid 1px gray;
+}
+
+.join-mission-column {
+  flex-basis: 15%;
+}
+
+.missions-list {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.mission-card {
+  display: flex;
+  width: auto;
+  border: solid 1px gray;
+  margin-left: 3%;
+  margin-right: 9%;
+}
+
+.mission-name {
+  flex-basis: 10%;
+  border-right: solid 1px gray;
+}
+
+.mission-description {
+  flex-basis: 65%;
+  border-right: solid 1px gray;
+}
+
+.mission-member-status {
+  flex-basis: 10%;
+  border-right: solid 1px gray;
+}
+
+.mission-join-button {
+  flex-basis: 15%;
+}

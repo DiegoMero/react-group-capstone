@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import React from 'react';
 import Navbar from './components/Navbar';
 import MyProfile from './components/MyProfile';
+import Missions from './components/Missions';
 import Rockets from './components/Rockets';
 
 export default class App extends React.PureComponent {
@@ -10,7 +11,8 @@ export default class App extends React.PureComponent {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/Rockets" element={<Rockets />} />
+          <Route path="/" element={<Rockets />} />
+          <Route path="/Missions" element={<Missions />} />
           <Route path="/MyProfile" element={<MyProfile />} />
         </Routes>
       </div>

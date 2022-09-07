@@ -9,7 +9,7 @@ function Navbar() {
       <h1>Space Travelers Hub</h1>
       <div className="links">
         <NavLink
-          to="/Rockets"
+          to="/"
           className={({ isActive }) => (isActive ? 'active' : 'inactive')}
         >
           Rockets
