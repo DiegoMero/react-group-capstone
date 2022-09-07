@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import './style/Missions.css';
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
