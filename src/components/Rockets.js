@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './style/Rockets.css';
-import displayRockets from '../Redux/RocketsApi';
+import displayRockets from '../Redux/Rockets/RocketsApi';
 
 function Rockets() {
   const [state, setState] = useState([]);
