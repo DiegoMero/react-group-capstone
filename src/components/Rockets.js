@@ -1,6 +1,8 @@
+/* eslint-disable import/no-duplicates */
 import React, { useEffect, useState } from 'react';
 import './style/Rockets.css';
 import displayRockets from '../Redux/Rockets/RocketsApi';
+import { reserveRocket } from '../Redux/Rockets/RocketsApi';
 
 function Rockets() {
   const [state, setState] = useState([]);
@@ -10,6 +12,10 @@ function Rockets() {
     displayRockets(setState);
   }, []);
 
+  const handle = (e) => {
+    displayRockets(reserveRocket(e.target.id));
+  };
+
   return (
     <div>
       {state.map((item) => (
@@ -17,11 +23,17 @@ function Rockets() {
           <span className="image"><img src={item.flickr_images} alt="rocket" /></span>
           <div className="elements">
             <h2 className="sub" key={item.id}>{item.rocket_name}</h2>
-            <span className="type">{item.rocket_type}</span>
             <p>
               {item.description}
             </p>
-            <button type="button" className="reserve">Reserve Rocket</button>
+            <button
+              type="button"
+              id={item.id}
+              className="reserve"
+              onClick={handle}
+            >
+              Reserve Rocket
+            </button>
           </div>
         </div>
       ))}
