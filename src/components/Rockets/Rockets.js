@@ -1,6 +1,4 @@
-/* eslint-disable import/no-duplicates */
-/* eslint linebreak-style: ["error", "windows"] */
-/* eslint-disable react/jsx-one-expression-per-line */
+/* eslint-disable linebreak-style */
 import { useSelector, useDispatch } from 'react-redux';
 import '../style/Rockets.css';
 import { useEffect } from 'react';
