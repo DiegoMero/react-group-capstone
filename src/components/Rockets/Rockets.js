@@ -2,7 +2,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import '../style/Rockets.css';
 import { useEffect } from 'react';
-import { fetchApi } from '../../redux/Rockets/RocketsApi';
+import { fetchApi } from '../../Redux/Rockets/RocketsApi';
 import CardRockets from './cardRockets';
 
 function Rockets() {

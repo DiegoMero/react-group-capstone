@@ -3,7 +3,7 @@ import React from 'react';
 import '../style/Rockets.css';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { reserveRocket, cancelRocket } from '../../redux/Rockets/RocketsApi';
+import { reserveRocket, cancelRocket } from '../../Redux/Rockets/RocketsApi';
 
 function CardRockets({ rocket }) {
   const dispatch = useDispatch();

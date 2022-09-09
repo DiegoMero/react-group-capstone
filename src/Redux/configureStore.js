@@ -1,4 +1,3 @@
-/* eslint-disable import/extensions */
 import { configureStore } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
 import { missionReducer } from './missions/missions';
