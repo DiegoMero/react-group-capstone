@@ -1,0 +1,35 @@
+.profile-container h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.profile-container {
+  background-image: url('../Rockets/background/space.jpg');
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+}
+
+.title {
+  margin-left: 10%;
+  margin-top: 10%;
+  color: #fff;
+}
+
+.rocket-profile {
+  margin-left: 10%;
+  width: 13%;
+}
+
+div .rocket-profile:nth-child(even) {
+  background-color: #27374686;
+  color: #fff;
+}
+
+.name {
+  border: 1px solid #000;
+  margin: 0%;
+  padding: 10%;
+  color: #fff;
+}
