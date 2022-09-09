@@ -1,7 +1,10 @@
 .rocketsdiv {
+  background-image: url('../Rockets/background/space.jpg');
   display: flex;
   margin-top: 5%;
-  padding: 5%;
+  padding: 3%;
+  border: 1px solid #000;
+  border-radius: 10px;
 }
 
 .elements {
@@ -10,15 +13,49 @@
   margin-left: 3%;
 }
 
+.sub {
+  font-family: 'Anton', sans-serif;
+  color: rgba(255, 255, 255, 0.726);
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+  color: rgba(255, 255, 255, 0.726);
+}
+
 .image img {
-  width: 16rem;
-  height: 12rem;
+  width: 20rem;
+  height: 17rem;
+}
+
+.cancelreserve {
+  width: 15%;
+  font-family: 'Oswald', sans-serif;
+  background-color: #f00;
+  border: none;
+  color: #fff;
+  padding: 1%;
+  border-radius: 5px;
 }
 
 .reserve {
   width: 15%;
+  font-family: 'Oswald', sans-serif;
+  background-color: #00f;
+  border: none;
+  color: #fff;
+  padding: 1%;
+  border-radius: 5px;
 }
 
 .type {
   margin-top: 0%;
+}
+
+p .rocketreserved {
+  border: 1px solid #00f;
+  background: #00f;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.1%;
 }

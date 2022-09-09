@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import MyProfile from './components/MyProfile';
 import Missions from './components/Missions';
-import Rockets from './components/Rockets';
+import Rockets from './components/Rockets/Rockets';
 
 export default class App extends React.PureComponent {
   render() {
