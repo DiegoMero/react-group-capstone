@@ -14,12 +14,12 @@ const MissionItem = (props) => {
       <div className="mission-name">{mission.missionName}</div>
       <div className="mission-description">{mission.missionDescription}</div>
       <div className="mission-member-status">
-        {mission.reserved === true && (<div>Active Member</div>)}
-        {mission.reserved === false && (<div>NOT A MEMBER</div>)}
+        {mission.reserved === true && (<div className="active-member">Active Member</div>)}
+        {mission.reserved === false && (<div className="inactive-member">NOT A MEMBER</div>)}
       </div>
       <div className="mission-join-button">
-        {mission.reserved === true && (<button type="button" onClick={clickHandler}>Leave Mission</button>)}
-        {mission.reserved === false && (<button type="button" onClick={clickHandler}>Join Mission</button>)}
+        {mission.reserved === true && (<button type="button" className="leave-button" onClick={clickHandler}>Leave Mission</button>)}
+        {mission.reserved === false && (<button type="button" className="join-button" onClick={clickHandler}>Join Mission</button>)}
       </div>
     </li>
   );
