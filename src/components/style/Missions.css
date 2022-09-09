@@ -48,6 +48,10 @@
   margin-right: 9%;
 }
 
+.mission-card:nth-child(even) {
+  background-color: whitesmoke;
+}
+
 .mission-name {
   flex-basis: 10%;
   font-weight: bold;

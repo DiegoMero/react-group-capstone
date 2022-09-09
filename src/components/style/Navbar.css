@@ -7,6 +7,7 @@
   padding-left: 3rem;
   height: 70px;
   border-bottom: 1px solid rgb(210, 208, 208);
+  font-family: 'Anton', sans-serif;
 }
 
 .navmenu h1 {
@@ -26,6 +27,10 @@
   margin-left: 2rem;
   margin-right: 10%;
   cursor: pointer;
+}
+
+.links a {
+  color: rgb(4, 175, 231);
 }
 
 .inactive {
