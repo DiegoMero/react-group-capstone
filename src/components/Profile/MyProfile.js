@@ -7,12 +7,22 @@ function MyProfile() {
   const rockets = useSelector((state) => state.rockets);
   const displayRocket = rockets.filter((rocket) => rocket.rocketReserved === true);
 
+  const missions = useSelector((state) => state.missions);
+
+  const missionToDisplay = missions.filter((element) => element.reserved === true);
   return (
     <div className="profile-container">
-      <h1>My Profile</h1>
+      <div className="my-missions">
+        <h2>My Missions</h2>
+        <ul className="joined-mission-list">
+          {missionToDisplay.map((mission) => (
+            <li className="joined-mission-item" key={mission.missionId}>{mission.missionName}</li>
+          ))}
+        </ul>
+      </div>
       <div className="card-container">
         <div className="rockets">
-          <h3 className="title">ALL MY ROCKETS</h3>
+          <h2 className="title">My Rockets</h2>
           {displayRocket.map((rocket) => (
             <RocketProfile
               key={rocket.rockedId}

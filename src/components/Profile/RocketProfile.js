@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import React from 'react';
 import '../style/Profile.css';
 import propTypes from 'prop-types';
