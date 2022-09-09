@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { changeMissionStatus } from '../../redux/missions/missions';
+import { changeMissionStatus } from '../../Redux/missions/missions';
 
 const MissionItem = (props) => {
   const { mission } = props;
@@ -14,10 +14,12 @@ const MissionItem = (props) => {
       <div className="mission-name">{mission.missionName}</div>
       <div className="mission-description">{mission.missionDescription}</div>
       <div className="mission-member-status">
-        <div>NOT A MEMBER</div>
+        {mission.reserved === true && (<div>Active Member</div>)}
+        {mission.reserved === false && (<div>NOT A MEMBER</div>)}
       </div>
       <div className="mission-join-button">
-        <button type="button" onClick={clickHandler}>Join Mission</button>
+        {mission.reserved === true && (<button type="button" onClick={clickHandler}>Leave Mission</button>)}
+        {mission.reserved === false && (<button type="button" onClick={clickHandler}>Join Mission</button>)}
       </div>
     </li>
   );
