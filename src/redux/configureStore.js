@@ -1,13 +1,15 @@
 /* eslint-disable import/extensions */
 import { configureStore } from '@reduxjs/toolkit';
+import logger from 'redux-logger';
 import { missionReducer } from './missions/missions';
-import displayRockets from './Rockets/RocketsApi';
+import rocketSlice from './Rockets/RocketsApi';
 
 const store = configureStore({
   reducer: {
-    rockets: displayRockets,
+    rockets: rocketSlice,
     missions: missionReducer,
   },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
 
 export default store;

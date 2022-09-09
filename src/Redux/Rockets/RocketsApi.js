@@ -1,51 +1,50 @@
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const RESERVE_ROCKETS = 'RESERVE_ROCKETS';
-const CANCEL_ROCKETS = 'CANCEL_ROCKETS';
+const initialState = [];
 
 const URL = 'https://api.spacexdata.com/v3/rockets';
 
-const displayRockets = async (state) => {
-  const petition = await axios.get(`${URL}`);
-  state(petition.data);
-};
+export const fetchApi = createAsyncThunk(
+  'rockets/fetchApi',
+  async () => {
+    const response = await axios.get(URL);
+    return response.data;
+  },
+);
 
-export const reducerRocket = (state = [], action) => {
-  switch (action.type) {
-    case RESERVE_ROCKETS:
-      return [
-        ...state,
-        {
-          id: action.id,
-          images: action.flickr_images,
-          name: action.rocket_name,
-          description: action.description,
-        },
-      ];
+const rocketSlice = createSlice({
+  name: 'rockets',
+  initialState,
+  reducers: {
+    reserveRocket: {
+      reducer: (state, action) => state.map((el) => (
+        el.rocketId === action.payload ? { ...el, rocketReserved: true } : el)),
+      prepare: (rocketId) => ({
+        payload: rocketId,
+      }),
+    },
+    cancelRocket: {
+      reducer: (state, action) => state.map((el) => (
+        el.rocketId === action.payload ? { ...el, rocketReserved: false } : el)),
+      prepare: (rocketId) => ({
+        payload: rocketId,
+      }),
+    },
+  },
+  extraReducers: {
+    [fetchApi.fulfilled]: (state, action) => {
+      const rockets = action.payload.map((el) => ({
+        rocketId: el.id,
+        rocketName: el.rocket_name,
+        rocketDesc: el.description,
+        rocketImg: el.flickr_images[0],
+        rocketWiki: el.wikipedia,
+      }));
+      return rockets;
+    },
+  },
+});
 
-    case CANCEL_ROCKETS:
-      return state.filter((rocket) => rocket.id !== action.id);
-
-    default:
-      return state;
-  }
-};
-
-export const reserveRocket = (id) => {
-  const rocket = {
-    type: RESERVE_ROCKETS,
-    active: true,
-    id,
-  };
-  return rocket;
-};
-
-// export const cancelRocket = (id) => {
-//   const cancel = {
-//     type: CANCEL_ROCKETS,
-//     id,
-//   };
-//   return cancel;
-// };
-
-export default displayRockets;
+export const { reserveRocket, cancelRocket } = rocketSlice.actions;
+export default rocketSlice.reducer;
