@@ -1,0 +1,111 @@
+.missions-section {
+  font-family: 'Anton', sans-serif;
+}
+
+.missions-header {
+  display: flex;
+  width: auto;
+  margin-top: 15px;
+  border: solid 1px gray;
+  margin-left: 3%;
+  margin-right: 9%;
+  font-weight: bold;
+}
+
+.mission-column {
+  padding: 5px;
+  width: 113.891px;
+  border-right: solid 1px gray;
+}
+
+.description-column {
+  padding: 5px;
+  border-right: solid 1px gray;
+  width: 746.891px;
+}
+
+.status-column {
+  padding: 5px;
+  border-right: solid 1px gray;
+  width: 105px;
+}
+
+.join-mission-column {
+  padding: 5px;
+}
+
+.missions-list {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.mission-card {
+  display: flex;
+  width: auto;
+  border: solid 1px gray;
+  margin-left: 3%;
+  margin-right: 9%;
+}
+
+.mission-card:nth-child(even) {
+  background-color: whitesmoke;
+}
+
+.mission-name {
+  flex-basis: 10%;
+  font-weight: bold;
+  padding: 4.5px;
+  border-right: solid 1px gray;
+}
+
+.mission-description {
+  flex-basis: 65%;
+  border-right: solid 1px gray;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.mission-member-status {
+  flex-basis: 10%;
+  border-right: solid 1px gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.mission-join-button {
+  flex-basis: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inactive-member {
+  color: white;
+  background-color: gray;
+  border-radius: 5%;
+  padding: 5px;
+}
+
+.active-member {
+  color: white;
+  background-color: rgb(54, 177, 218);
+  border-radius: 5%;
+  padding: 5px;
+}
+
+.leave-button {
+  border: 1px solid red;
+  padding: 10px;
+  border-radius: 5%;
+  color: red;
+}
+
+.join-button {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5%;
+  color: black;
+}
