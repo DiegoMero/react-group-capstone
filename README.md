@@ -30,11 +30,11 @@ To get a local copy up and running follow these simple example steps:
 - Twitter: [@twitter](https://twitter.com/Dimero18)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/diego-mero-80b326225/)
 
-👤 **Josue Benavibes**
+👤 **Josue Benavides**
 
-- GitHub: [@github](https://github.com/)
-- Twitter: [@twitter](https://twitter.com/)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/)
+- GitHub: [@jdbs9514](https://github.com/jdbs9514)
+- Twitter: [@JODA1015](https://twitter.com/JODA1015)
+- LinkedIn: [Josue](https://www.linkedin.com/in/josue-benavides-617749b2/)
 
 ## 🤝 Contributing
 
