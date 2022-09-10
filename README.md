@@ -26,9 +26,9 @@ To get a local copy up and running follow these simple example steps:
 
 👤 **Diego Mero**
 
-- GitHub: [@github](https://github.com/DiegoMero)
-- Twitter: [@twitter](https://twitter.com/Dimero18)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/diego-mero-80b326225/)
+- GitHub: [@DiegoMero](https://github.com/DiegoMero)
+- Twitter: [@Dimero18](https://twitter.com/Dimero18)
+- LinkedIn: [Diego](https://www.linkedin.com/in/diego-mero-80b326225/)
 
 👤 **Josue Benavides**
 
