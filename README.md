@@ -17,10 +17,16 @@
 
 To get a local copy up and running follow these simple example steps:
 
+- Make sure you have node installed on your local machine.
 - Open your console.
 - Type the following "git clone git@github.com:DiegoMero/react-group-capstone.git".
 - Press ENTER to create your local clone.
+- Run "npm install" to download the necessary modules.
 - Start the SPA by typing `npm start`
+
+### Prerequisites
+
+Any HTML and CSS code editor like Vscode or Vim.
 
 ## Authors
 
